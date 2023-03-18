@@ -11,3 +11,7 @@ An IPTV Player Built with SwiftUI + Swift (Only IPAD now. Planning to build it f
 Code is pretty basic in terms of architecture. Feel free to update. Here is a screenshot
 
 ![screenshot](https://raw.githubusercontent.com/asolanki-in/ProFlix/main/screenshot.png)
+
+
+### Feel Free to Contribute
+Reach me out for any query.
