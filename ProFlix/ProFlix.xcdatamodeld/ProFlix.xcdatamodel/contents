@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="QuickPlayStream" representedClassName="QuickPlayStream" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Stream" representedClassName="Stream" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="kind" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="attributes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StreamAttribute" inverseName="toStream" inverseEntity="StreamAttribute"/>
+        <relationship name="library" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StreamLibrary" inverseName="stream" inverseEntity="StreamLibrary"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="StreamAttribute" representedClassName="StreamAttribute" syncable="YES">
+        <attribute name="groupTitle" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="logo" optional="YES" attributeType="String"/>
+        <relationship name="toStream" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stream" inverseName="attributes" inverseEntity="Stream"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="StreamLibrary" representedClassName="StreamLibrary" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="stream" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stream" inverseName="library" inverseEntity="Stream"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+</model>

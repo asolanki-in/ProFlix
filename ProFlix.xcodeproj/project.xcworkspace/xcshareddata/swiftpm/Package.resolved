@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "m3ukit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/omaralbeik/M3UKit.git",
+      "state" : {
+        "revision" : "aab6e13cfafd123e6a6e7a7530eb5713cfb5138c",
+        "version" : "0.8.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "fb50c1d20f24db5322b2f8f379de3618f75fe08e",
+        "version" : "5.15.5"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "61fefe9c284fd41ddef77d02749e88f00c305196",
+        "version" : "2.2.2"
+      }
+    }
+  ],
+  "version" : 2
+}

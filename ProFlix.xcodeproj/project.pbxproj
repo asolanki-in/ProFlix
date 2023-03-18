@@ -1,0 +1,1030 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		275D391F29A34BDC0059CD94 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D391E29A34BDC0059CD94 /* Modifiers.swift */; };
+		275D392129A34C260059CD94 /* Text+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D392029A34C260059CD94 /* Text+Modifier.swift */; };
+		2768F1CF29B3419D004C788C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F1CE29B3419D004C788C /* RootView.swift */; };
+		2768F1D229B3A313004C788C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F1D129B3A313004C788C /* CardView.swift */; };
+		2768F1D429B3A524004C788C /* SmallCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F1D329B3A524004C788C /* SmallCardView.swift */; };
+		27766F6129B255AF00C2B129 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27766F6029B255AF00C2B129 /* Color+Extension.swift */; };
+		27766F6429B25CD000C2B129 /* StreamLibrary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27766F6229B25CD000C2B129 /* StreamLibrary+CoreDataClass.swift */; };
+		27766F6529B25CD000C2B129 /* StreamLibrary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27766F6329B25CD000C2B129 /* StreamLibrary+CoreDataProperties.swift */; };
+		27766F6C29B25D4600C2B129 /* Stream+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27766F6A29B25D4600C2B129 /* Stream+CoreDataClass.swift */; };
+		27766F6D29B25D4600C2B129 /* Stream+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27766F6B29B25D4600C2B129 /* Stream+CoreDataProperties.swift */; };
+		2783B37129A9F689006A03BF /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783B37029A9F689006A03BF /* VideoPlayerView.swift */; };
+		2783B37329A9F6F5006A03BF /* VideoPlayer+UIViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2783B37229A9F6F5006A03BF /* VideoPlayer+UIViewRepresentable.swift */; };
+		279386DB29A2847000718350 /* ProFlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279386DA29A2847000718350 /* ProFlixApp.swift */; };
+		279386DD29A2847000718350 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279386DC29A2847000718350 /* Persistence.swift */; };
+		279386E029A2847000718350 /* ProFlix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 279386DE29A2847000718350 /* ProFlix.xcdatamodeld */; };
+		279386E429A2847100718350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279386E329A2847100718350 /* Assets.xcassets */; };
+		279386E829A2847100718350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279386E729A2847100718350 /* Preview Assets.xcassets */; };
+		279386F229A2847100718350 /* ProFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279386F129A2847100718350 /* ProFlixTests.swift */; };
+		279386FC29A2847100718350 /* ProFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279386FB29A2847100718350 /* ProFlixUITests.swift */; };
+		279386FE29A2847100718350 /* ProFlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279386FD29A2847100718350 /* ProFlixUITestsLaunchTests.swift */; };
+		2793871029A285A300718350 /* ProFlixRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2793870F29A285A300718350 /* ProFlixRootView.swift */; };
+		2793871929A28E5600718350 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2793871829A28E5600718350 /* ThemeManager.swift */; };
+		2793871C29A28EC000718350 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2793871B29A28EC000718350 /* Theme.swift */; };
+		2793871F29A2905D00718350 /* UserAgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2793871E29A2905D00718350 /* UserAgreementView.swift */; };
+		2793872629A2913600718350 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2793872529A2913600718350 /* Constants.swift */; };
+		27CF426529B70E7E0057C061 /* AddQuickPlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF426429B70E7E0057C061 /* AddQuickPlayListView.swift */; };
+		27CF426729B70EB90057C061 /* AddQuickPlayListView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF426629B70EB90057C061 /* AddQuickPlayListView+Extension.swift */; };
+		27CF426929B70F420057C061 /* AddQuickPlayFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF426829B70F420057C061 /* AddQuickPlayFormView.swift */; };
+		27CF426C29B715F30057C061 /* QuickPlayStream+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF426A29B715F30057C061 /* QuickPlayStream+CoreDataClass.swift */; };
+		27CF426D29B715F30057C061 /* QuickPlayStream+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF426B29B715F30057C061 /* QuickPlayStream+CoreDataProperties.swift */; };
+		27CF427029B71AB20057C061 /* AllQuickPlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF426F29B71AB20057C061 /* AllQuickPlayListView.swift */; };
+		27D09A2929B503EA00CCBDFB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 27D09A2829B503EA00CCBDFB /* SDWebImageSwiftUI */; };
+		27D09A2B29B5052200CCBDFB /* StreamCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D09A2A29B5052200CCBDFB /* StreamCardView.swift */; };
+		27D09A2D29B50DEA00CCBDFB /* NavRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D09A2C29B50DEA00CCBDFB /* NavRouter.swift */; };
+		27D62C9729B47884009A5258 /* AddPlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62C9629B47884009A5258 /* AddPlayListView.swift */; };
+		27D62C9929B4819C009A5258 /* AddPlayListView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62C9829B4819C009A5258 /* AddPlayListView+Observed.swift */; };
+		27D62C9B29B4826B009A5258 /* CardAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62C9A29B4826B009A5258 /* CardAddView.swift */; };
+		27D62C9E29B48401009A5258 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62C9D29B48401009A5258 /* ButtonStyles.swift */; };
+		27D62CA029B4ADA0009A5258 /* AddingItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62C9F29B4ADA0009A5258 /* AddingItemsView.swift */; };
+		27D62CA229B4B2DA009A5258 /* AddPlayListFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CA129B4B2DA009A5258 /* AddPlayListFormView.swift */; };
+		27D62CA429B4B3F2009A5258 /* AddPlayListFailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CA329B4B3F2009A5258 /* AddPlayListFailView.swift */; };
+		27D62CA629B4B58D009A5258 /* AddPlayListSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CA529B4B58D009A5258 /* AddPlayListSuccessView.swift */; };
+		27D62CA829B4BEA5009A5258 /* CoreDataEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CA729B4BEA5009A5258 /* CoreDataEnvironmentObject.swift */; };
+		27D62CAA29B4C1C4009A5258 /* LoadingDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CA929B4C1C4009A5258 /* LoadingDataView.swift */; };
+		27D62CAD29B4D221009A5258 /* AllPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CAC29B4D221009A5258 /* AllPlaylistView.swift */; };
+		27D62CAF29B4D305009A5258 /* SmallRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CAE29B4D305009A5258 /* SmallRowView.swift */; };
+		27D62CB229B4DA32009A5258 /* StreamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CB129B4DA31009A5258 /* StreamListView.swift */; };
+		27DF33E129AB28FB00AD5279 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF33E029AB28FB00AD5279 /* CoreDataManager.swift */; };
+		27DF33E329AB2A5800AD5279 /* LibraryObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF33E229AB2A5800AD5279 /* LibraryObserved.swift */; };
+		27EA0B2529AB3A5000A937ED /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA0B2429AB3A5000A937ED /* FileManagerTests.swift */; };
+		27EA0B3529ABB95500A937ED /* M3UKit in Frameworks */ = {isa = PBXBuildFile; productRef = 27EA0B3429ABB95500A937ED /* M3UKit */; };
+		27EA0B4429ABC6B700A937ED /* StreamAttribute+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA0B4029ABC6B600A937ED /* StreamAttribute+CoreDataProperties.swift */; };
+		27EA0B4529ABC6B700A937ED /* StreamAttribute+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA0B4129ABC6B600A937ED /* StreamAttribute+CoreDataClass.swift */; };
+		27EA0B4A29ABCA5C00A937ED /* Stream+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA0B4929ABCA5C00A937ED /* Stream+Extension.swift */; };
+		27EA0B4C29ABCA7500A937ED /* StreamAttribute+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA0B4B29ABCA7500A937ED /* StreamAttribute+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		279386EE29A2847100718350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279386CF29A2847000718350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 279386D629A2847000718350;
+			remoteInfo = ProFlix;
+		};
+		279386F829A2847100718350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279386CF29A2847000718350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 279386D629A2847000718350;
+			remoteInfo = ProFlix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		275D391E29A34BDC0059CD94 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		275D392029A34C260059CD94 /* Text+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Modifier.swift"; sourceTree = "<group>"; };
+		2768F1CE29B3419D004C788C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2768F1D129B3A313004C788C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2768F1D329B3A524004C788C /* SmallCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardView.swift; sourceTree = "<group>"; };
+		27766F6029B255AF00C2B129 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		27766F6229B25CD000C2B129 /* StreamLibrary+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreamLibrary+CoreDataClass.swift"; sourceTree = "<group>"; };
+		27766F6329B25CD000C2B129 /* StreamLibrary+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreamLibrary+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		27766F6A29B25D4600C2B129 /* Stream+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stream+CoreDataClass.swift"; sourceTree = "<group>"; };
+		27766F6B29B25D4600C2B129 /* Stream+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stream+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2783B37029A9F689006A03BF /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		2783B37229A9F6F5006A03BF /* VideoPlayer+UIViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPlayer+UIViewRepresentable.swift"; sourceTree = "<group>"; };
+		279386D729A2847000718350 /* ProFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		279386DA29A2847000718350 /* ProFlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFlixApp.swift; sourceTree = "<group>"; };
+		279386DC29A2847000718350 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		279386DF29A2847000718350 /* ProFlix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProFlix.xcdatamodel; sourceTree = "<group>"; };
+		279386E329A2847100718350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		279386E529A2847100718350 /* ProFlix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProFlix.entitlements; sourceTree = "<group>"; };
+		279386E729A2847100718350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		279386ED29A2847100718350 /* ProFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		279386F129A2847100718350 /* ProFlixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFlixTests.swift; sourceTree = "<group>"; };
+		279386F729A2847100718350 /* ProFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		279386FB29A2847100718350 /* ProFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFlixUITests.swift; sourceTree = "<group>"; };
+		279386FD29A2847100718350 /* ProFlixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFlixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2793870F29A285A300718350 /* ProFlixRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFlixRootView.swift; sourceTree = "<group>"; };
+		2793871329A286C200718350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2793871829A28E5600718350 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		2793871B29A28EC000718350 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		2793871E29A2905D00718350 /* UserAgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementView.swift; sourceTree = "<group>"; };
+		2793872529A2913600718350 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		27CF426429B70E7E0057C061 /* AddQuickPlayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuickPlayListView.swift; sourceTree = "<group>"; };
+		27CF426629B70EB90057C061 /* AddQuickPlayListView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddQuickPlayListView+Extension.swift"; sourceTree = "<group>"; };
+		27CF426829B70F420057C061 /* AddQuickPlayFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuickPlayFormView.swift; sourceTree = "<group>"; };
+		27CF426A29B715F30057C061 /* QuickPlayStream+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuickPlayStream+CoreDataClass.swift"; sourceTree = "<group>"; };
+		27CF426B29B715F30057C061 /* QuickPlayStream+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuickPlayStream+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		27CF426F29B71AB20057C061 /* AllQuickPlayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuickPlayListView.swift; sourceTree = "<group>"; };
+		27D09A2A29B5052200CCBDFB /* StreamCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCardView.swift; sourceTree = "<group>"; };
+		27D09A2C29B50DEA00CCBDFB /* NavRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRouter.swift; sourceTree = "<group>"; };
+		27D62C9629B47884009A5258 /* AddPlayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayListView.swift; sourceTree = "<group>"; };
+		27D62C9829B4819C009A5258 /* AddPlayListView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddPlayListView+Observed.swift"; sourceTree = "<group>"; };
+		27D62C9A29B4826B009A5258 /* CardAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAddView.swift; sourceTree = "<group>"; };
+		27D62C9D29B48401009A5258 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		27D62C9F29B4ADA0009A5258 /* AddingItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingItemsView.swift; sourceTree = "<group>"; };
+		27D62CA129B4B2DA009A5258 /* AddPlayListFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayListFormView.swift; sourceTree = "<group>"; };
+		27D62CA329B4B3F2009A5258 /* AddPlayListFailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayListFailView.swift; sourceTree = "<group>"; };
+		27D62CA529B4B58D009A5258 /* AddPlayListSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayListSuccessView.swift; sourceTree = "<group>"; };
+		27D62CA729B4BEA5009A5258 /* CoreDataEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEnvironmentObject.swift; sourceTree = "<group>"; };
+		27D62CA929B4C1C4009A5258 /* LoadingDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataView.swift; sourceTree = "<group>"; };
+		27D62CAC29B4D221009A5258 /* AllPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlaylistView.swift; sourceTree = "<group>"; };
+		27D62CAE29B4D305009A5258 /* SmallRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRowView.swift; sourceTree = "<group>"; };
+		27D62CB129B4DA31009A5258 /* StreamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamListView.swift; sourceTree = "<group>"; };
+		27DF33E029AB28FB00AD5279 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		27DF33E229AB2A5800AD5279 /* LibraryObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryObserved.swift; sourceTree = "<group>"; };
+		27EA0B2429AB3A5000A937ED /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
+		27EA0B4029ABC6B600A937ED /* StreamAttribute+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StreamAttribute+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		27EA0B4129ABC6B600A937ED /* StreamAttribute+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StreamAttribute+CoreDataClass.swift"; sourceTree = "<group>"; };
+		27EA0B4929ABCA5C00A937ED /* Stream+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stream+Extension.swift"; sourceTree = "<group>"; };
+		27EA0B4B29ABCA7500A937ED /* StreamAttribute+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StreamAttribute+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		279386D429A2847000718350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D09A2929B503EA00CCBDFB /* SDWebImageSwiftUI in Frameworks */,
+				27EA0B3529ABB95500A937ED /* M3UKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279386EA29A2847100718350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279386F429A2847100718350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		275D391D29A34BCA0059CD94 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				275D391E29A34BDC0059CD94 /* Modifiers.swift */,
+				275D392029A34C260059CD94 /* Text+Modifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		2768F1CD29B3417B004C788C /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				2768F1CE29B3419D004C788C /* RootView.swift */,
+				27D62CA929B4C1C4009A5258 /* LoadingDataView.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
+		2768F1D029B3A2F8004C788C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				2768F1D129B3A313004C788C /* CardView.swift */,
+				2768F1D329B3A524004C788C /* SmallCardView.swift */,
+				27D62C9A29B4826B009A5258 /* CardAddView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		2783B36F29A9F661006A03BF /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				2783B37029A9F689006A03BF /* VideoPlayerView.swift */,
+				2783B37229A9F6F5006A03BF /* VideoPlayer+UIViewRepresentable.swift */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		279386CE29A2847000718350 = {
+			isa = PBXGroup;
+			children = (
+				279386D929A2847000718350 /* ProFlix */,
+				279386F029A2847100718350 /* ProFlixTests */,
+				279386FA29A2847100718350 /* ProFlixUITests */,
+				279386D829A2847000718350 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		279386D829A2847000718350 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279386D729A2847000718350 /* ProFlix.app */,
+				279386ED29A2847100718350 /* ProFlixTests.xctest */,
+				279386F729A2847100718350 /* ProFlixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		279386D929A2847000718350 /* ProFlix */ = {
+			isa = PBXGroup;
+			children = (
+				2793871329A286C200718350 /* Info.plist */,
+				279386DA29A2847000718350 /* ProFlixApp.swift */,
+				279386DC29A2847000718350 /* Persistence.swift */,
+				2793870F29A285A300718350 /* ProFlixRootView.swift */,
+				27DF33E229AB2A5800AD5279 /* LibraryObserved.swift */,
+				27D09A2C29B50DEA00CCBDFB /* NavRouter.swift */,
+				27EA0B3629ABC5FF00A937ED /* CoreDataSupport */,
+				275D391D29A34BCA0059CD94 /* ViewModifiers */,
+				2793872129A2907D00718350 /* Extensions */,
+				2793871729A28E3C00718350 /* Core */,
+				27EA0B4D29ABCC0D00A937ED /* Views */,
+				279386E329A2847100718350 /* Assets.xcassets */,
+				279386E529A2847100718350 /* ProFlix.entitlements */,
+				279386DE29A2847000718350 /* ProFlix.xcdatamodeld */,
+				279386E629A2847100718350 /* Preview Content */,
+			);
+			path = ProFlix;
+			sourceTree = "<group>";
+		};
+		279386E629A2847100718350 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				279386E729A2847100718350 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		279386F029A2847100718350 /* ProFlixTests */ = {
+			isa = PBXGroup;
+			children = (
+				279386F129A2847100718350 /* ProFlixTests.swift */,
+				27EA0B2429AB3A5000A937ED /* FileManagerTests.swift */,
+			);
+			path = ProFlixTests;
+			sourceTree = "<group>";
+		};
+		279386FA29A2847100718350 /* ProFlixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				279386FB29A2847100718350 /* ProFlixUITests.swift */,
+				279386FD29A2847100718350 /* ProFlixUITestsLaunchTests.swift */,
+			);
+			path = ProFlixUITests;
+			sourceTree = "<group>";
+		};
+		2793871729A28E3C00718350 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2793872429A2912900718350 /* Constants */,
+				2793871A29A28EAF00718350 /* Themes */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2793871A29A28EAF00718350 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				2793871829A28E5600718350 /* ThemeManager.swift */,
+				2793871B29A28EC000718350 /* Theme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		2793871D29A2901800718350 /* UserAgreement */ = {
+			isa = PBXGroup;
+			children = (
+				2793871E29A2905D00718350 /* UserAgreementView.swift */,
+			);
+			path = UserAgreement;
+			sourceTree = "<group>";
+		};
+		2793872129A2907D00718350 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27766F6029B255AF00C2B129 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2793872429A2912900718350 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2793872529A2913600718350 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		27CF426329B70E500057C061 /* AddQuickPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				27CF426429B70E7E0057C061 /* AddQuickPlayListView.swift */,
+				27CF426829B70F420057C061 /* AddQuickPlayFormView.swift */,
+				27CF426629B70EB90057C061 /* AddQuickPlayListView+Extension.swift */,
+			);
+			path = AddQuickPlayView;
+			sourceTree = "<group>";
+		};
+		27CF426E29B71A860057C061 /* QuickPlayListView */ = {
+			isa = PBXGroup;
+			children = (
+				27CF426F29B71AB20057C061 /* AllQuickPlayListView.swift */,
+			);
+			path = QuickPlayListView;
+			sourceTree = "<group>";
+		};
+		27D62C9529B4785E009A5258 /* AddPlaylistView */ = {
+			isa = PBXGroup;
+			children = (
+				27D62C9629B47884009A5258 /* AddPlayListView.swift */,
+				27D62C9F29B4ADA0009A5258 /* AddingItemsView.swift */,
+				27D62CA329B4B3F2009A5258 /* AddPlayListFailView.swift */,
+				27D62CA529B4B58D009A5258 /* AddPlayListSuccessView.swift */,
+				27D62CA129B4B2DA009A5258 /* AddPlayListFormView.swift */,
+				27D62C9829B4819C009A5258 /* AddPlayListView+Observed.swift */,
+			);
+			path = AddPlaylistView;
+			sourceTree = "<group>";
+		};
+		27D62C9C29B483E9009A5258 /* ViewExtras */ = {
+			isa = PBXGroup;
+			children = (
+				27D62C9D29B48401009A5258 /* ButtonStyles.swift */,
+			);
+			path = ViewExtras;
+			sourceTree = "<group>";
+		};
+		27D62CAB29B4D20E009A5258 /* AllPlayListview */ = {
+			isa = PBXGroup;
+			children = (
+				27D62CAC29B4D221009A5258 /* AllPlaylistView.swift */,
+				27D62CAE29B4D305009A5258 /* SmallRowView.swift */,
+			);
+			path = AllPlayListview;
+			sourceTree = "<group>";
+		};
+		27D62CB029B4DA20009A5258 /* StreamListView */ = {
+			isa = PBXGroup;
+			children = (
+				27D62CB129B4DA31009A5258 /* StreamListView.swift */,
+				27D09A2A29B5052200CCBDFB /* StreamCardView.swift */,
+			);
+			path = StreamListView;
+			sourceTree = "<group>";
+		};
+		27EA0B3629ABC5FF00A937ED /* CoreDataSupport */ = {
+			isa = PBXGroup;
+			children = (
+				27EA0B4829ABCA4400A937ED /* Extensions */,
+				27EA0B3F29ABC6B600A937ED /* CoreDataClass */,
+				27DF33E029AB28FB00AD5279 /* CoreDataManager.swift */,
+				27D62CA729B4BEA5009A5258 /* CoreDataEnvironmentObject.swift */,
+			);
+			path = CoreDataSupport;
+			sourceTree = "<group>";
+		};
+		27EA0B3F29ABC6B600A937ED /* CoreDataClass */ = {
+			isa = PBXGroup;
+			children = (
+				27CF426A29B715F30057C061 /* QuickPlayStream+CoreDataClass.swift */,
+				27CF426B29B715F30057C061 /* QuickPlayStream+CoreDataProperties.swift */,
+				27766F6A29B25D4600C2B129 /* Stream+CoreDataClass.swift */,
+				27766F6B29B25D4600C2B129 /* Stream+CoreDataProperties.swift */,
+				27766F6229B25CD000C2B129 /* StreamLibrary+CoreDataClass.swift */,
+				27766F6329B25CD000C2B129 /* StreamLibrary+CoreDataProperties.swift */,
+				27EA0B4029ABC6B600A937ED /* StreamAttribute+CoreDataProperties.swift */,
+				27EA0B4129ABC6B600A937ED /* StreamAttribute+CoreDataClass.swift */,
+			);
+			path = CoreDataClass;
+			sourceTree = "<group>";
+		};
+		27EA0B4829ABCA4400A937ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27EA0B4929ABCA5C00A937ED /* Stream+Extension.swift */,
+				27EA0B4B29ABCA7500A937ED /* StreamAttribute+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27EA0B4D29ABCC0D00A937ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27CF426E29B71A860057C061 /* QuickPlayListView */,
+				27CF426329B70E500057C061 /* AddQuickPlayView */,
+				2793871D29A2901800718350 /* UserAgreement */,
+				2783B36F29A9F661006A03BF /* PlayerView */,
+				27D62CB029B4DA20009A5258 /* StreamListView */,
+				27D62CAB29B4D20E009A5258 /* AllPlayListview */,
+				27D62C9C29B483E9009A5258 /* ViewExtras */,
+				27D62C9529B4785E009A5258 /* AddPlaylistView */,
+				2768F1D029B3A2F8004C788C /* SubViews */,
+				2768F1CD29B3417B004C788C /* RootView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		279386D629A2847000718350 /* ProFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2793870129A2847100718350 /* Build configuration list for PBXNativeTarget "ProFlix" */;
+			buildPhases = (
+				279386D329A2847000718350 /* Sources */,
+				279386D429A2847000718350 /* Frameworks */,
+				279386D529A2847000718350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProFlix;
+			packageProductDependencies = (
+				27EA0B3429ABB95500A937ED /* M3UKit */,
+				27D09A2829B503EA00CCBDFB /* SDWebImageSwiftUI */,
+			);
+			productName = ProFlix;
+			productReference = 279386D729A2847000718350 /* ProFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		279386EC29A2847100718350 /* ProFlixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2793870429A2847100718350 /* Build configuration list for PBXNativeTarget "ProFlixTests" */;
+			buildPhases = (
+				279386E929A2847100718350 /* Sources */,
+				279386EA29A2847100718350 /* Frameworks */,
+				279386EB29A2847100718350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				279386EF29A2847100718350 /* PBXTargetDependency */,
+			);
+			name = ProFlixTests;
+			productName = ProFlixTests;
+			productReference = 279386ED29A2847100718350 /* ProFlixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		279386F629A2847100718350 /* ProFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2793870729A2847100718350 /* Build configuration list for PBXNativeTarget "ProFlixUITests" */;
+			buildPhases = (
+				279386F329A2847100718350 /* Sources */,
+				279386F429A2847100718350 /* Frameworks */,
+				279386F529A2847100718350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				279386F929A2847100718350 /* PBXTargetDependency */,
+			);
+			name = ProFlixUITests;
+			productName = ProFlixUITests;
+			productReference = 279386F729A2847100718350 /* ProFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		279386CF29A2847000718350 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					279386D629A2847000718350 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					279386EC29A2847100718350 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 279386D629A2847000718350;
+					};
+					279386F629A2847100718350 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 279386D629A2847000718350;
+					};
+				};
+			};
+			buildConfigurationList = 279386D229A2847000718350 /* Build configuration list for PBXProject "ProFlix" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 279386CE29A2847000718350;
+			packageReferences = (
+				27EA0B3329ABB95500A937ED /* XCRemoteSwiftPackageReference "M3UKit" */,
+				27D09A2729B503EA00CCBDFB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 279386D829A2847000718350 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				279386D629A2847000718350 /* ProFlix */,
+				279386EC29A2847100718350 /* ProFlixTests */,
+				279386F629A2847100718350 /* ProFlixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		279386D529A2847000718350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279386E829A2847100718350 /* Preview Assets.xcassets in Resources */,
+				279386E429A2847100718350 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279386EB29A2847100718350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279386F529A2847100718350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		279386D329A2847000718350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27766F6D29B25D4600C2B129 /* Stream+CoreDataProperties.swift in Sources */,
+				2783B37129A9F689006A03BF /* VideoPlayerView.swift in Sources */,
+				279386E029A2847000718350 /* ProFlix.xcdatamodeld in Sources */,
+				27DF33E329AB2A5800AD5279 /* LibraryObserved.swift in Sources */,
+				27EA0B4529ABC6B700A937ED /* StreamAttribute+CoreDataClass.swift in Sources */,
+				27D62CA229B4B2DA009A5258 /* AddPlayListFormView.swift in Sources */,
+				27766F6429B25CD000C2B129 /* StreamLibrary+CoreDataClass.swift in Sources */,
+				2768F1CF29B3419D004C788C /* RootView.swift in Sources */,
+				2793872629A2913600718350 /* Constants.swift in Sources */,
+				27CF426C29B715F30057C061 /* QuickPlayStream+CoreDataClass.swift in Sources */,
+				27D62C9E29B48401009A5258 /* ButtonStyles.swift in Sources */,
+				279386DB29A2847000718350 /* ProFlixApp.swift in Sources */,
+				2793871929A28E5600718350 /* ThemeManager.swift in Sources */,
+				27D62CAD29B4D221009A5258 /* AllPlaylistView.swift in Sources */,
+				27D09A2B29B5052200CCBDFB /* StreamCardView.swift in Sources */,
+				27CF427029B71AB20057C061 /* AllQuickPlayListView.swift in Sources */,
+				27D62CA429B4B3F2009A5258 /* AddPlayListFailView.swift in Sources */,
+				27CF426D29B715F30057C061 /* QuickPlayStream+CoreDataProperties.swift in Sources */,
+				27766F6C29B25D4600C2B129 /* Stream+CoreDataClass.swift in Sources */,
+				27CF426929B70F420057C061 /* AddQuickPlayFormView.swift in Sources */,
+				27D62CB229B4DA32009A5258 /* StreamListView.swift in Sources */,
+				2793871F29A2905D00718350 /* UserAgreementView.swift in Sources */,
+				27DF33E129AB28FB00AD5279 /* CoreDataManager.swift in Sources */,
+				275D392129A34C260059CD94 /* Text+Modifier.swift in Sources */,
+				2793871C29A28EC000718350 /* Theme.swift in Sources */,
+				27D09A2D29B50DEA00CCBDFB /* NavRouter.swift in Sources */,
+				27CF426729B70EB90057C061 /* AddQuickPlayListView+Extension.swift in Sources */,
+				2783B37329A9F6F5006A03BF /* VideoPlayer+UIViewRepresentable.swift in Sources */,
+				27D62CA029B4ADA0009A5258 /* AddingItemsView.swift in Sources */,
+				27D62C9929B4819C009A5258 /* AddPlayListView+Observed.swift in Sources */,
+				279386DD29A2847000718350 /* Persistence.swift in Sources */,
+				27CF426529B70E7E0057C061 /* AddQuickPlayListView.swift in Sources */,
+				27D62C9B29B4826B009A5258 /* CardAddView.swift in Sources */,
+				27D62CAA29B4C1C4009A5258 /* LoadingDataView.swift in Sources */,
+				27D62C9729B47884009A5258 /* AddPlayListView.swift in Sources */,
+				27EA0B4C29ABCA7500A937ED /* StreamAttribute+Extension.swift in Sources */,
+				27766F6529B25CD000C2B129 /* StreamLibrary+CoreDataProperties.swift in Sources */,
+				27766F6129B255AF00C2B129 /* Color+Extension.swift in Sources */,
+				27D62CA629B4B58D009A5258 /* AddPlayListSuccessView.swift in Sources */,
+				27EA0B4A29ABCA5C00A937ED /* Stream+Extension.swift in Sources */,
+				2768F1D429B3A524004C788C /* SmallCardView.swift in Sources */,
+				27D62CAF29B4D305009A5258 /* SmallRowView.swift in Sources */,
+				2793871029A285A300718350 /* ProFlixRootView.swift in Sources */,
+				275D391F29A34BDC0059CD94 /* Modifiers.swift in Sources */,
+				27EA0B4429ABC6B700A937ED /* StreamAttribute+CoreDataProperties.swift in Sources */,
+				27D62CA829B4BEA5009A5258 /* CoreDataEnvironmentObject.swift in Sources */,
+				2768F1D229B3A313004C788C /* CardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279386E929A2847100718350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279386F229A2847100718350 /* ProFlixTests.swift in Sources */,
+				27EA0B2529AB3A5000A937ED /* FileManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279386F329A2847100718350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279386FC29A2847100718350 /* ProFlixUITests.swift in Sources */,
+				279386FE29A2847100718350 /* ProFlixUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		279386EF29A2847100718350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 279386D629A2847000718350 /* ProFlix */;
+			targetProxy = 279386EE29A2847100718350 /* PBXContainerItemProxy */;
+		};
+		279386F929A2847100718350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 279386D629A2847000718350 /* ProFlix */;
+			targetProxy = 279386F829A2847100718350 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		279386FF29A2847100718350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		2793870029A2847100718350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Release;
+		};
+		2793870229A2847100718350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProFlix/ProFlix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProFlix/Preview Content\"";
+				DEVELOPMENT_TEAM = 522EW6L79G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProFlix/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asolanki.ProFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		2793870329A2847100718350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProFlix/ProFlix.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProFlix/Preview Content\"";
+				DEVELOPMENT_TEAM = 522EW6L79G;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProFlix/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asolanki.ProFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Release;
+		};
+		2793870529A2847100718350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 522EW6L79G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asolanki.ProFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProFlix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProFlix";
+			};
+			name = Debug;
+		};
+		2793870629A2847100718350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 522EW6L79G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asolanki.ProFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProFlix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProFlix";
+			};
+			name = Release;
+		};
+		2793870829A2847100718350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 522EW6L79G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asolanki.ProFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProFlix;
+			};
+			name = Debug;
+		};
+		2793870929A2847100718350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 522EW6L79G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asolanki.ProFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProFlix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		279386D229A2847000718350 /* Build configuration list for PBXProject "ProFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279386FF29A2847100718350 /* Debug */,
+				2793870029A2847100718350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2793870129A2847100718350 /* Build configuration list for PBXNativeTarget "ProFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2793870229A2847100718350 /* Debug */,
+				2793870329A2847100718350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2793870429A2847100718350 /* Build configuration list for PBXNativeTarget "ProFlixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2793870529A2847100718350 /* Debug */,
+				2793870629A2847100718350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2793870729A2847100718350 /* Build configuration list for PBXNativeTarget "ProFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2793870829A2847100718350 /* Debug */,
+				2793870929A2847100718350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27D09A2729B503EA00CCBDFB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+		27EA0B3329ABB95500A937ED /* XCRemoteSwiftPackageReference "M3UKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/omaralbeik/M3UKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27D09A2829B503EA00CCBDFB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27D09A2729B503EA00CCBDFB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		27EA0B3429ABB95500A937ED /* M3UKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27EA0B3329ABB95500A937ED /* XCRemoteSwiftPackageReference "M3UKit" */;
+			productName = M3UKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		279386DE29A2847000718350 /* ProFlix.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				279386DF29A2847000718350 /* ProFlix.xcdatamodel */,
+			);
+			currentVersion = 279386DF29A2847000718350 /* ProFlix.xcdatamodel */;
+			path = ProFlix.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 279386CF29A2847000718350 /* Project object */;
+}
