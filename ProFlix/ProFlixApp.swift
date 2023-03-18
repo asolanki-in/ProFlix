@@ -13,8 +13,7 @@ struct ProFlixApp: App {
 
     var body: some Scene {
         WindowGroup {
-			ProFlixRootView()
-				.environmentObject(coreData)
+			ProFlixRootView().environmentObject(coreData)
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27096D5829C610810068AD43 /* M3UWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27096D5729C610810068AD43 /* M3UWrapper.swift */; };
 		275D391F29A34BDC0059CD94 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D391E29A34BDC0059CD94 /* Modifiers.swift */; };
 		275D392129A34C260059CD94 /* Text+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275D392029A34C260059CD94 /* Text+Modifier.swift */; };
 		2768F1CF29B3419D004C788C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2768F1CE29B3419D004C788C /* RootView.swift */; };
@@ -55,7 +56,6 @@
 		27D62CAF29B4D305009A5258 /* SmallRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CAE29B4D305009A5258 /* SmallRowView.swift */; };
 		27D62CB229B4DA32009A5258 /* StreamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D62CB129B4DA31009A5258 /* StreamListView.swift */; };
 		27DF33E129AB28FB00AD5279 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF33E029AB28FB00AD5279 /* CoreDataManager.swift */; };
-		27DF33E329AB2A5800AD5279 /* LibraryObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF33E229AB2A5800AD5279 /* LibraryObserved.swift */; };
 		27EA0B2529AB3A5000A937ED /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA0B2429AB3A5000A937ED /* FileManagerTests.swift */; };
 		27EA0B3529ABB95500A937ED /* M3UKit in Frameworks */ = {isa = PBXBuildFile; productRef = 27EA0B3429ABB95500A937ED /* M3UKit */; };
 		27EA0B4429ABC6B700A937ED /* StreamAttribute+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EA0B4029ABC6B600A937ED /* StreamAttribute+CoreDataProperties.swift */; };
@@ -82,6 +82,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27096D5729C610810068AD43 /* M3UWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3UWrapper.swift; sourceTree = "<group>"; };
 		275D391E29A34BDC0059CD94 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		275D392029A34C260059CD94 /* Text+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Modifier.swift"; sourceTree = "<group>"; };
 		2768F1CE29B3419D004C788C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -134,7 +135,6 @@
 		27D62CAE29B4D305009A5258 /* SmallRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallRowView.swift; sourceTree = "<group>"; };
 		27D62CB129B4DA31009A5258 /* StreamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamListView.swift; sourceTree = "<group>"; };
 		27DF33E029AB28FB00AD5279 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		27DF33E229AB2A5800AD5279 /* LibraryObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryObserved.swift; sourceTree = "<group>"; };
 		27EA0B2429AB3A5000A937ED /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
 		27EA0B4029ABC6B600A937ED /* StreamAttribute+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StreamAttribute+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		27EA0B4129ABC6B600A937ED /* StreamAttribute+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StreamAttribute+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -233,7 +233,6 @@
 				279386DA29A2847000718350 /* ProFlixApp.swift */,
 				279386DC29A2847000718350 /* Persistence.swift */,
 				2793870F29A285A300718350 /* ProFlixRootView.swift */,
-				27DF33E229AB2A5800AD5279 /* LibraryObserved.swift */,
 				27D09A2C29B50DEA00CCBDFB /* NavRouter.swift */,
 				27EA0B3629ABC5FF00A937ED /* CoreDataSupport */,
 				275D391D29A34BCA0059CD94 /* ViewModifiers */,
@@ -279,6 +278,7 @@
 			children = (
 				2793872429A2912900718350 /* Constants */,
 				2793871A29A28EAF00718350 /* Themes */,
+				27096D5729C610810068AD43 /* M3UWrapper.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -566,7 +566,6 @@
 				27766F6D29B25D4600C2B129 /* Stream+CoreDataProperties.swift in Sources */,
 				2783B37129A9F689006A03BF /* VideoPlayerView.swift in Sources */,
 				279386E029A2847000718350 /* ProFlix.xcdatamodeld in Sources */,
-				27DF33E329AB2A5800AD5279 /* LibraryObserved.swift in Sources */,
 				27EA0B4529ABC6B700A937ED /* StreamAttribute+CoreDataClass.swift in Sources */,
 				27D62CA229B4B2DA009A5258 /* AddPlayListFormView.swift in Sources */,
 				27766F6429B25CD000C2B129 /* StreamLibrary+CoreDataClass.swift in Sources */,
@@ -596,6 +595,7 @@
 				279386DD29A2847000718350 /* Persistence.swift in Sources */,
 				27CF426529B70E7E0057C061 /* AddQuickPlayListView.swift in Sources */,
 				27D62C9B29B4826B009A5258 /* CardAddView.swift in Sources */,
+				27096D5829C610810068AD43 /* M3UWrapper.swift in Sources */,
 				27D62CAA29B4C1C4009A5258 /* LoadingDataView.swift in Sources */,
 				27D62C9729B47884009A5258 /* AddPlayListView.swift in Sources */,
 				27EA0B4C29ABCA7500A937ED /* StreamAttribute+Extension.swift in Sources */,
