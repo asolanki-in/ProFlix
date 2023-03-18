@@ -1,4 +1,4 @@
-# ProFlix
+# ProFlix - A Simple IPTV App
 An IPTV Player Built with SwiftUI + Swift (Only IPAD now. Planning to build it for iPhone & AppleTV Platform)
 
 #### This is a simple SwiftUI project. It accept m3u urls and manage multiple streams in core data. The user can play his favourite streams on IPAD.
