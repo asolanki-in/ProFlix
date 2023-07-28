@@ -15,3 +15,40 @@ Code is pretty basic in terms of architecture. Feel free to update. Here is a sc
 
 ### Feel Free to Contribute
 Reach me out for any query.
+
+ lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+  </head>
+  <body>
+    <input type="file" id="file-selector" name="my-input" class="hidden" />
+    <script>
+      $("#file-selector")[0].onchange = onSelectedFileChange;
+
+      function onSelectedFileChange(e) {
+        readFile(e.target.files[0]);
+      }
+
+      function readFile(file) {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+
+        reader.addEventListener("load", (event) => {
+          const result = event.target.result;
+          alert("Now Upload");
+          $("#file-selector").val('');
+        });
+
+        reader.addEventListener("progress", (event) => {
+          if (event.loaded && event.total) {
+            const percent = (event.loaded / event.total) * 100;
+            console.log(`Progress: ${Math.round(percent)}`);
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
