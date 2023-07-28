@@ -16,7 +16,8 @@ Code is pretty basic in terms of architecture. Feel free to update. Here is a sc
 ### Feel Free to Contribute
 Reach me out for any query.
 
- lang="en">
+ ''' html
+ <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,3 +53,5 @@ Reach me out for any query.
     </script>
   </body>
 </html>
+
+'''
